@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Link support</title>
+<meta name="description" content="Help for the Link app for iPhone: getting started, common problems and how to report one.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <nav><a href="../">Link</a><a href="../privacy/">Privacy policy</a></nav>
+  <h1>Link support</h1>
+  <p class="muted">Help for the Link app for iPhone.</p>
+
+  <div class="summary">
+    <strong>Need help or found a problem?</strong> Open an issue at
+    <a href="https://github.com/loopmasta/link/issues">github.com/loopmasta/link/issues</a>. Issues are public:
+    never post your authentication key or other private details.
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Ask the operators of your network for a node callsign and an authentication key. They issue them to licensed radio amateurs.</li>
+    <li>Open Link and confirm the one-time licence statement.</li>
+    <li>Open Settings (the gear, bottom left), enter the callsign and the key, and tap Save.</li>
+    <li>Tap Connect at the top. From then on Link connects by itself when you open it.</li>
+    <li>Choose the talkgroup to talk on in the selector at the top right of the header. Add talkgroups with the plus button.</li>
+    <li>Hold the big button to talk and release it to listen.</li>
+  </ol>
+  <p>Transmitting requires an amateur radio licence and must follow the rules that apply to you.</p>
+
+  <h2>Using the app</h2>
+  <ul>
+    <li><strong>Talkgroups:</strong> the plus button opens your list. Add a talkgroup with a number and your own name, rename, sort, reorder or delete it. The ear icon makes you hear that talkgroup as well while another one is selected.</li>
+    <li><strong>Active stations:</strong> the list shows who talked recently, anywhere on the network. Tap a station to switch to its talkgroup, tap its info icon for what the network publishes about it, and press and hold to copy the callsign or look it up on QRZ.com.</li>
+    <li><strong>Level meters:</strong> the two bars in the header show what you hear and what you send.</li>
+    <li><strong>Automatic level control</strong> (Settings, Audio) evens out loud and quiet stations you hear. The speaker icon shows an ALC badge while it is on.</li>
+    <li><strong>Compression</strong> (Settings, Audio) makes your own voice more even when you transmit. The microphone icon shows a COMP badge while it is on.</li>
+    <li><strong>Voice filter</strong> (Settings, Audio) removes rumble and low-frequency noise below 250 Hz and lifts the high-mid range of your voice a little, so it sounds clearer and less boomy. The microphone icon shows an EQ badge while it is on.</li>
+    <li><strong>Stay Active</strong> (Settings) keeps the screen on while Link is open.</li>
+  </ul>
+
+  <h2>Common problems</h2>
+
+  <h3>"The reflector refused the login: Access denied"</h3>
+  <p>The callsign or the authentication key is wrong. Check both in Settings. The key belongs to the exact callsign the operators gave you, including a suffix such as -APP.</p>
+
+  <h3>"Software/Version nicht zugelassen"</h3>
+  <p>The network only accepts approved client software, and the operators have not approved this app or version yet. Ask them to allow it. Nothing is wrong with your phone or your key.</p>
+
+  <h3>"The reflector's security certificate changed"</h3>
+  <p>Link remembers each server's certificate authority and stops if it differs. If the operators announced a change, reset the trusted certificate in Settings. If they did not, do not continue and ask them first.</p>
+
+  <h3>The talk button is greyed out</h3>
+  <p>It is disabled while the app is not connected, and while another station is talking on your talkgroup (the status says Receiving). If it says Connected and nobody is talking, check that the microphone is allowed for Link in the iOS Settings app.</p>
+
+  <h3>I hear nothing</h3>
+  <p>Check the volume and where the sound goes (speaker or headset). Make sure the talkgroup you want is the selected one or has its ear switched on. A talkgroup only has sound while someone is talking on it. The header's incoming level bar moves when audio arrives.</p>
+
+  <h3>I am not connected</h3>
+  <p>The header says why. Link reconnects by itself after a network change. If it does not, tap Connect or open Settings.</p>
+
+  <h2>Reporting a problem</h2>
+  <p>Please open an issue and tell us: the app and iOS version, what you did, what you expected, what happened, and roughly when it happened. Do not include your authentication key.</p>
+
+  <p>See also the <a href="../privacy/">privacy policy</a>.</p>
+
+  <footer>Link is an independent app and is not affiliated with the SvxLink project or any network operator.</footer>
+</main>
+</body>
+</html>
